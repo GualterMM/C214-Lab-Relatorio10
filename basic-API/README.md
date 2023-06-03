@@ -15,7 +15,7 @@ Com o repositório clonado, navegue até a pasta da API:
 cd basic-API
 ```
 
-Com o repositório clonado, abra sua ferramenta de terminal no diretório do projeto e instale as dependências do projeto usando o comando:
+Instale as dependências do projeto usando o comando:
 
 ```
 npm install
