@@ -1,31 +1,76 @@
-<h1 align="center"> Basic API </h1>
+![workflow](https://github.com/GualterMM/C214-Lab-Relatorio07/actions/workflows/node.js.yml/badge.svg)
 
-[![CI de teste](https://github.com/IagoCB/basic-API/actions/workflows/node.js.yml/badge.svg?branch=main)](https://github.com/IagoCB/basic-API/actions/workflows/node.js.yml)
+# Projeto API em Node
+Um projeto de API utilizando NodeJS, Express e MongoDB. A aplicação consiste em um simples CRUD de usuários. O projeto inclui teste unitários.
 
+## 🔧 Pré-requisitos
+1. Instalação do [NodeJS](https://nodejs.org/).
+2. Uma ferramenta que possibilite o envio e recebimento de requisições HTTP, como um browser ou [Postman](https://www.postman.com/).
+3. Uma ferramenta de terminal.
 
-## 📝 Descrição <a name="Descrição"></a>
+## 🚀 Instalando o projeto
+Com o repositório clonado, navegue até a pasta da API:
 
-Esse repositório, consiste na implementação de um CRUD de usuários no qual será submetido a testes para validação do conhecimento da utilização destes testes
-<br>
+```bash
+cd basic-API
+```
 
-## 📥 Requisitos <a name="Requisitos"></a>
-1. Instalar o [Node.JS](https://nodejs.org/en/download/).
-2. Utilizei o [Visual Studio Code](https://code.visualstudio.com/) mas também é possível utilizar outro editor de sua preferência.
+Com o repositório clonado, abra sua ferramenta de terminal no diretório do projeto e instale as dependências do projeto usando o comando:
 
-## 🧩 Como executar <a name="Como-executar"></a>
-1. Utilizando o terminal do Git Bash, clone o repositório em sua máquina através do seguinte comando:
-    ```
-    $ git clone https://github.com/IagoCB/basic-API.git
-    ```
-    ```
-    $ git clone git@github.com:IagoCB/basic-API.git
-    ```
+```
+npm install
+```
 
-2. No diretório do projeto, utilize o comando a seguir para instalar as dependências:
-    ```
-    npm i
-    ```
-3. No diretório do projeto, utilize o comando a seguir para executar os testes:
-    ```
-    npm test
-    ```
+Para executar o projeto, utilize um dos seguintes comandos:
+
+```
+npm start
+```
+
+```
+npm run start
+```
+
+Para executar a suite de testes, utilize um dos seguintes comandos:
+
+```
+npm test
+```
+
+```
+npm run test
+```
+
+## 💻 Utilizando a API
+**IMPORTANTE: O servidor é criado utilizando a porta 4000. Certifique-se que essa porta está liberada para uso no seu dispositivo.**  
+Com o servidor rodando, a URL do mesmo é `http://localhost:4000`. Todas as rotas daqui em diante referidas **devem precedir a rota raiz**.  
+
+## GET
+
+### Buscar todos os usuários
+* **URL**
+  * `/user/list`
+
+## PATCH
+
+### Buscar usuário por e-mail
+* **URL**
+  * `/user/listByEmail/:email`
+
+## POST
+
+### Inserir usuário
+* **URL**
+  * `/user/create`
+
+## PUT
+
+### Atualizar usuário
+* **URL**
+  * `/user/update`
+
+## DELETE
+
+### Remover usuário
+* **URL**
+  * `/carro/delete/:email`
